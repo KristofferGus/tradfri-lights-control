@@ -158,3 +158,4 @@ tradfri_standalone_psk.conf
 .vscode/*
 
 .ruff_cache
+.key.txt
