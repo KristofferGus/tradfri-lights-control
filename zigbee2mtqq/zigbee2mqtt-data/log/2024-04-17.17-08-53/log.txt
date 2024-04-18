@@ -1,0 +1,22 @@
+info  2024-04-17 17:08:53: Logging to console and directory: '/app/data/log/2024-04-17.17-08-53' filename: log.txt
+info  2024-04-17 17:08:53: Starting Zigbee2MQTT version 1.36.1 (commit #ffc2ff1)
+info  2024-04-17 17:08:53: Starting zigbee-herdsman (0.40.3)
+info  2024-04-17 17:08:57: zigbee-herdsman started (resumed)
+info  2024-04-17 17:08:57: Coordinator firmware version: '{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20180507,"transportrev":2},"type":"zStack12"}'
+info  2024-04-17 17:08:57: Currently 1 devices are joined:
+info  2024-04-17 17:08:57: 0xcc86ecfffe327b56 (0xcc86ecfffe327b56): LED1925G6 - IKEA TRADFRI LED bulb E14 470 lumen, opal, dimmable, white spectrum, color spectrum (Router)
+warn  2024-04-17 17:08:57: `permit_join` set to  `true` in configuration.yaml.
+warn  2024-04-17 17:08:57: Allowing new devices to join.
+warn  2024-04-17 17:08:57: Set `permit_join` to `false` once you joined all devices.
+info  2024-04-17 17:08:57: Zigbee: allowing new devices to join.
+info  2024-04-17 17:08:57: Connecting to MQTT server at mqtt://mqtt
+info  2024-04-17 17:08:57: Connected to MQTT server
+info  2024-04-17 17:08:57: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-04-17 17:08:57: Started frontend on port 8080
+info  2024-04-17 17:08:57: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.3804,"y":0.3767},"color_mode":"color_temp","color_options":{"execute_if_off":false},"color_temp":250,"linkquality":120,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 17:08:57: Zigbee2MQTT started!
+error 2024-04-17 17:38:32: Adapter disconnected, stopping
+info  2024-04-17 17:38:32: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-04-17 17:38:32: Disconnecting from MQTT server
+info  2024-04-17 17:38:32: Stopping zigbee-herdsman...
+error 2024-04-17 17:38:32: Failed to stop Zigbee2MQTT

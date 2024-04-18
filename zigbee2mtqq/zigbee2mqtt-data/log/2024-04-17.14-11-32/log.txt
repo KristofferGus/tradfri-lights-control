@@ -1,0 +1,51 @@
+info  2024-04-17 14:11:32: Logging to console and directory: '/app/data/log/2024-04-17.14-11-32' filename: log.txt
+info  2024-04-17 14:11:32: Starting Zigbee2MQTT version 1.36.1 (commit #ffc2ff1)
+info  2024-04-17 14:11:32: Starting zigbee-herdsman (0.40.3)
+info  2024-04-17 14:11:32: zigbee-herdsman started (resumed)
+info  2024-04-17 14:11:32: Coordinator firmware version: '{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20180507,"transportrev":2},"type":"zStack12"}'
+info  2024-04-17 14:11:32: Currently 1 devices are joined:
+info  2024-04-17 14:11:32: 0xcc86ecfffe327b56 (0xcc86ecfffe327b56): LED1925G6 - IKEA TRADFRI LED bulb E14 470 lumen, opal, dimmable, white spectrum, color spectrum (Router)
+warn  2024-04-17 14:11:32: `permit_join` set to  `true` in configuration.yaml.
+warn  2024-04-17 14:11:32: Allowing new devices to join.
+warn  2024-04-17 14:11:32: Set `permit_join` to `false` once you joined all devices.
+info  2024-04-17 14:11:32: Zigbee: allowing new devices to join.
+info  2024-04-17 14:11:32: Connecting to MQTT server at mqtt://mqtt
+info  2024-04-17 14:11:33: Connected to MQTT server
+info  2024-04-17 14:11:33: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-04-17 14:11:33: Started frontend on port 8080
+info  2024-04-17 14:11:33: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.3227,"y":0.329},"color_mode":"xy","color_options":{"execute_if_off":false},"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:11:33: Zigbee2MQTT started!
+info  2024-04-17 14:12:26: Configuring '0xcc86ecfffe327b56'
+error 2024-04-17 14:12:28: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":39105,"colory":20971}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Data request failed with error: 'No network route' (205))'
+info  2024-04-17 14:12:37: Removing device '0xcc86ecfffe327b56' (block: false, force: false)
+error 2024-04-17 14:12:48: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":36202,"colory":26732}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Data request failed with error: 'No network route' (205))'
+info  2024-04-17 14:13:02: Start Touchlink scan
+error 2024-04-17 14:13:13: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":28436,"colory":32820}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Data request failed with error: 'No network route' (205))'
+error 2024-04-17 14:13:13: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":22918,"colory":23154}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Cannot execute command, in Inter-PAN mode)'
+error 2024-04-17 14:13:13: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":45494,"colory":19418}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Cannot execute command, in Inter-PAN mode)'
+error 2024-04-17 14:13:13: Request 'zigbee2mqtt/bridge/request/device/remove' failed with error: 'Failed to remove device '0xcc86ecfffe327b56' (block: false, force: false) (Error: Cannot execute command, in Inter-PAN mode)'
+info  2024-04-17 14:13:13: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/remove', payload '{"data":{},"error":"Failed to remove device '0xcc86ecfffe327b56' (block: false, force: false) (Error: Cannot execute command, in Inter-PAN mode)","status":"error","transaction":"g4xmw-2"}'
+error 2024-04-17 14:13:13: Publish 'set' 'color' to '0xcc86ecfffe327b56' failed: 'Error: ZCL command 0xcc86ecfffe327b56/1 lightingColorCtrl.moveToColor({"transtime":0,"colorx":45494,"colory":19418}, {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":false,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false}) failed (Cannot execute command, in Inter-PAN mode)'
+info  2024-04-17 14:13:13: Successfully configured '0xcc86ecfffe327b56'
+info  2024-04-17 14:13:13: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/configure', payload '{"data":{"id":"0xcc86ecfffe327b56"},"status":"ok","transaction":"g4xmw-1"}'
+info  2024-04-17 14:13:13: Finished Touchlink scan
+info  2024-04-17 14:13:13: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"g4xmw-3"}'
+info  2024-04-17 14:13:42: Start Touchlink scan
+info  2024-04-17 14:13:54: Finished Touchlink scan
+info  2024-04-17 14:13:54: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"g4xmw-4"}'
+info  2024-04-17 14:13:55: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+info  2024-04-17 14:13:56: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+info  2024-04-17 14:13:57: Zigbee: disabling joining new devices.
+info  2024-04-17 14:13:57: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":false},"status":"ok","transaction":"g4xmw-5"}'
+info  2024-04-17 14:13:58: Zigbee: allowing new devices to join.
+info  2024-04-17 14:13:58: MQTT publish: topic 'zigbee2mqtt/bridge/response/permit_join', payload '{"data":{"time":254,"value":true},"status":"ok","transaction":"g4xmw-6"}'
+info  2024-04-17 14:13:58: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.3227,"y":0.329},"color_mode":"xy","color_options":{"execute_if_off":false},"linkquality":131,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:14:12: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.6942,"y":0.2963},"color_mode":"xy","color_options":{"execute_if_off":false},"linkquality":126,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:15:16: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.6942,"y":0.2963},"color_mode":"xy","color_options":{"execute_if_off":false},"linkquality":131,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:22:18: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.6942,"y":0.2963},"color_mode":"xy","color_options":{"execute_if_off":false},"linkquality":131,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:30:38: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.6942,"y":0.2963},"color_mode":"xy","color_options":{"execute_if_off":false},"color_temp":250,"linkquality":139,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-17 14:52:12: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-04-17 14:52:12: Disconnecting from MQTT server
+info  2024-04-17 14:52:12: Stopping zigbee-herdsman...
+info  2024-04-17 14:52:12: Stopped zigbee-herdsman
+info  2024-04-17 14:52:12: Stopped Zigbee2MQTT

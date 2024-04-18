@@ -1,0 +1,84 @@
+info  2024-04-18 14:00:16: Logging to console and directory: '/app/data/log/2024-04-18.14-00-16' filename: log.txt
+info  2024-04-18 14:00:16: Starting Zigbee2MQTT version 1.36.1 (commit #ffc2ff1)
+info  2024-04-18 14:00:16: Starting zigbee-herdsman (0.40.3)
+info  2024-04-18 14:00:17: zigbee-herdsman started (resumed)
+info  2024-04-18 14:00:17: Coordinator firmware version: '{"meta":{"maintrel":3,"majorrel":2,"minorrel":6,"product":0,"revision":20180507,"transportrev":2},"type":"zStack12"}'
+info  2024-04-18 14:00:17: Currently 1 devices are joined:
+info  2024-04-18 14:00:17: 0xcc86ecfffe327b56 (0xcc86ecfffe327b56): LED1925G6 - IKEA TRADFRI LED bulb E14 470 lumen, opal, dimmable, white spectrum, color spectrum (Router)
+warn  2024-04-18 14:00:17: `permit_join` set to  `true` in configuration.yaml.
+warn  2024-04-18 14:00:17: Allowing new devices to join.
+warn  2024-04-18 14:00:17: Set `permit_join` to `false` once you joined all devices.
+info  2024-04-18 14:00:17: Zigbee: allowing new devices to join.
+info  2024-04-18 14:00:17: Connecting to MQTT server at mqtt://mqtt
+info  2024-04-18 14:00:17: Connected to MQTT server
+info  2024-04-18 14:00:17: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+info  2024-04-18 14:00:17: Started frontend on port 8080
+info  2024-04-18 14:00:17: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"brightness":254,"color":{"x":0.3804,"y":0.3767},"color_mode":"color_temp","color_options":{"execute_if_off":false},"color_temp":250,"linkquality":120,"power_on_behavior":"on","state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"},"update_available":false}'
+info  2024-04-18 14:00:17: Zigbee2MQTT started!
+error 2024-04-18 14:06:31: Entity '{'id': '0xcc86ecfffe327b56'}' is unknown
+error 2024-04-18 14:06:35: Entity '{'id': '0xcc86ecfffe327b56'}' is unknown
+info  2024-04-18 14:07:05: Removing device '0xcc86ecfffe327b56' (block: false, force: false)
+warn  2024-04-18 14:07:05: Device '0xcc86ecfffe327b56' left the network
+info  2024-04-18 14:07:05: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_leave"}'
+info  2024-04-18 14:07:05: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload ''
+info  2024-04-18 14:07:05: Successfully removed device '0xcc86ecfffe327b56' (block: false, force: false)
+info  2024-04-18 14:07:05: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/remove', payload '{"data":{"block":false,"force":false,"id":"0xcc86ecfffe327b56"},"status":"ok","transaction":"k3ufv-1"}'
+info  2024-04-18 14:07:11: Start Touchlink scan
+info  2024-04-18 14:07:23: Finished Touchlink scan
+info  2024-04-18 14:07:23: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"k3ufv-2"}'
+info  2024-04-18 14:07:45: Start Touchlink scan
+info  2024-04-18 14:07:46: Device '0xcc86ecfffe327b56' joined
+info  2024-04-18 14:07:46: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_joined"}'
+info  2024-04-18 14:07:46: Starting interview of '0xcc86ecfffe327b56'
+info  2024-04-18 14:07:46: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"started"},"type":"device_interview"}'
+error 2024-04-18 14:07:46: Failed to interview '0xcc86ecfffe327b56', device has not successfully been paired
+info  2024-04-18 14:07:46: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"failed"},"type":"device_interview"}'
+info  2024-04-18 14:07:55: Starting interview of '0xcc86ecfffe327b56'
+info  2024-04-18 14:07:55: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"started"},"type":"device_interview"}'
+error 2024-04-18 14:07:55: Failed to interview '0xcc86ecfffe327b56', device has not successfully been paired
+info  2024-04-18 14:07:55: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"failed"},"type":"device_interview"}'
+info  2024-04-18 14:07:56: Finished Touchlink scan
+info  2024-04-18 14:07:56: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"k3ufv-3"}'
+info  2024-04-18 14:07:58: Starting interview of '0xcc86ecfffe327b56'
+info  2024-04-18 14:07:58: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"started"},"type":"device_interview"}'
+info  2024-04-18 14:08:09: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+info  2024-04-18 14:08:09: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+error 2024-04-18 14:08:18: Failed to interview '0xcc86ecfffe327b56', device has not successfully been paired
+info  2024-04-18 14:08:18: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"failed"},"type":"device_interview"}'
+info  2024-04-18 14:08:25: Removing device '0xcc86ecfffe327b56' (block: false, force: false)
+warn  2024-04-18 14:08:25: Device '0xcc86ecfffe327b56' left the network
+info  2024-04-18 14:08:25: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_leave"}'
+info  2024-04-18 14:08:25: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload ''
+info  2024-04-18 14:08:25: Successfully removed device '0xcc86ecfffe327b56' (block: false, force: false)
+info  2024-04-18 14:08:25: MQTT publish: topic 'zigbee2mqtt/bridge/response/device/remove', payload '{"data":{"block":false,"force":false,"id":"0xcc86ecfffe327b56"},"status":"ok","transaction":"k3ufv-4"}'
+info  2024-04-18 14:10:34: Start Touchlink scan
+info  2024-04-18 14:10:45: Device '0xcc86ecfffe327b56' joined
+info  2024-04-18 14:10:45: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_joined"}'
+info  2024-04-18 14:10:45: Starting interview of '0xcc86ecfffe327b56'
+info  2024-04-18 14:10:45: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"started"},"type":"device_interview"}'
+error 2024-04-18 14:10:45: Failed to interview '0xcc86ecfffe327b56', device has not successfully been paired
+info  2024-04-18 14:10:45: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"failed"},"type":"device_interview"}'
+info  2024-04-18 14:10:45: Finished Touchlink scan
+info  2024-04-18 14:10:45: MQTT publish: topic 'zigbee2mqtt/bridge/response/touchlink/scan', payload '{"data":{"found":[]},"status":"ok","transaction":"c496s-1"}'
+info  2024-04-18 14:10:48: Starting interview of '0xcc86ecfffe327b56'
+info  2024-04-18 14:10:48: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"started"},"type":"device_interview"}'
+info  2024-04-18 14:10:49: Successfully interviewed '0xcc86ecfffe327b56', device has successfully been paired
+info  2024-04-18 14:10:49: Device '0xcc86ecfffe327b56' is supported, identified as: IKEA TRADFRI LED bulb E14 470 lumen, opal, dimmable, white spectrum, color spectrum (LED1925G6)
+info  2024-04-18 14:10:49: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"definition":{"description":"TRADFRI LED bulb E14 470 lumen, opal, dimmable, white spectrum, color spectrum","exposes":[{"features":[{"access":7,"description":"On/off state of this light","label":"State","name":"state","property":"state","type":"binary","value_off":"OFF","value_on":"ON","value_toggle":"TOGGLE"},{"access":7,"description":"Brightness of this light","label":"Brightness","name":"brightness","property":"brightness","type":"numeric","value_max":254,"value_min":0},{"access":7,"description":"Color temperature of this light","label":"Color temp","name":"color_temp","presets":[{"description":"Coolest temperature supported","name":"coolest","value":250},{"description":"Cool temperature (250 mireds / 4000 Kelvin)","name":"cool","value":250},{"description":"Neutral temperature (370 mireds / 2700 Kelvin)","name":"neutral","value":370},{"description":"Warm temperature (454 mireds / 2200 Kelvin)","name":"warm","value":454},{"description":"Warmest temperature supported","name":"warmest","value":454}],"property":"color_temp","type":"numeric","unit":"mired","value_max":454,"value_min":250},{"access":7,"description":"Color temperature after cold power on of this light","label":"Color temp startup","name":"color_temp_startup","presets":[{"description":"Coolest temperature supported","name":"coolest","value":250},{"description":"Cool temperature (250 mireds / 4000 Kelvin)","name":"cool","value":250},{"description":"Neutral temperature (370 mireds / 2700 Kelvin)","name":"neutral","value":370},{"description":"Warm temperature (454 mireds / 2200 Kelvin)","name":"warm","value":454},{"description":"Warmest temperature supported","name":"warmest","value":454},{"description":"Restore previous color_temp on cold power on","name":"previous","value":65535}],"property":"color_temp_startup","type":"numeric","unit":"mired","value_max":454,"value_min":250},{"access":7,"description":"Color of this light in the CIE 1931 color space (x/y)","features":[{"access":7,"label":"X","name":"x","property":"x","type":"numeric"},{"access":7,"label":"Y","name":"y","property":"y","type":"numeric"}],"label":"Color (X/Y)","name":"color_xy","property":"color","type":"composite"}],"type":"light"},{"access":2,"description":"Triggers an effect on the light (e.g. make light blink for a few seconds)","label":"Effect","name":"effect","property":"effect","type":"enum","values":["blink","breathe","okay","channel_change","finish_effect","stop_effect"]},{"access":7,"category":"config","description":"Controls the behavior when the device is powered on after power loss. If you get an `UNSUPPORTED_ATTRIBUTE` error, the device does not support it.","label":"Power-on behavior","name":"power_on_behavior","property":"power_on_behavior","type":"enum","values":["off","on","toggle","previous"]},{"access":7,"category":"config","description":"Advanced color behavior","features":[{"access":2,"description":"Controls whether color and color temperature can be set while light is off","label":"Execute if off","name":"execute_if_off","property":"execute_if_off","type":"binary","value_off":false,"value_on":true}],"label":"Color options","name":"color_options","property":"color_options","type":"composite"},{"access":1,"category":"diagnostic","description":"Link quality (signal strength)","label":"Linkquality","name":"linkquality","property":"linkquality","type":"numeric","unit":"lqi","value_max":255,"value_min":0}],"model":"LED1925G6","options":[{"access":2,"description":"Controls the transition time (in seconds) of on/off, brightness, color temperature (if applicable) and color (if applicable) changes. Defaults to `0` (no transition).","label":"Transition","name":"transition","property":"transition","type":"numeric","value_min":0},{"access":2,"description":"When enabled colors will be synced, e.g. if the light supports both color x/y and color temperature a conversion from color x/y to color temperature will be done when setting the x/y color (default true).","label":"Color sync","name":"color_sync","property":"color_sync","type":"binary","value_off":false,"value_on":true},{"access":2,"description":"State actions will also be published as 'action' when true (default false).","label":"State action","name":"state_action","property":"state_action","type":"binary","value_off":false,"value_on":true}],"supports_ota":true,"vendor":"IKEA"},"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56","status":"successful","supported":true},"type":"device_interview"}'
+info  2024-04-18 14:10:49: Configuring '0xcc86ecfffe327b56'
+info  2024-04-18 14:10:49: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+info  2024-04-18 14:10:49: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"friendly_name":"0xcc86ecfffe327b56","ieee_address":"0xcc86ecfffe327b56"},"type":"device_announce"}'
+info  2024-04-18 14:10:49: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color_mode":"xy","linkquality":118}'
+info  2024-04-18 14:10:49: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color_mode":"xy","linkquality":118}'
+info  2024-04-18 14:10:49: Successfully configured '0xcc86ecfffe327b56'
+info  2024-04-18 14:10:51: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color_mode":"xy","linkquality":120,"state":"ON"}'
+info  2024-04-18 14:10:58: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color":{"x":0.4066,"y":0.1643},"color_mode":"xy","linkquality":118,"state":"ON"}'
+info  2024-04-18 14:11:01: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color":{"x":0.3227,"y":0.329},"color_mode":"xy","linkquality":120,"state":"ON"}'
+error 2024-04-18 14:11:16: Entity '{'id': '0xcc86ecfffe327b56'}' is unknown
+error 2024-04-18 14:11:19: Entity '{'id': '0xcc86ecfffe327b56'}' is unknown
+info  2024-04-18 14:11:32: MQTT publish: topic 'zigbee2mqtt/0xcc86ecfffe327b56', payload '{"color":{"x":0.3227,"y":0.329},"color_mode":"xy","linkquality":120,"state":"ON","update":{"installed_version":268572245,"latest_version":268572245,"state":"idle"}}'
+info  2024-04-18 14:12:10: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"offline"}'
+info  2024-04-18 14:12:10: Disconnecting from MQTT server
+info  2024-04-18 14:12:10: Stopping zigbee-herdsman...
+info  2024-04-18 14:12:11: Stopped zigbee-herdsman
+info  2024-04-18 14:12:11: Stopped Zigbee2MQTT

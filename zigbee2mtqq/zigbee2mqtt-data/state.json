@@ -1,0 +1,16 @@
+{
+    "0xcc86ecfffe327b56": {
+        "color_mode": "xy",
+        "state": "ON",
+        "color": {
+            "x": 0.3227,
+            "y": 0.329
+        },
+        "update": {
+            "state": "idle",
+            "installed_version": 268572245,
+            "latest_version": 268572245
+        },
+        "brightness": 100
+    }
+}

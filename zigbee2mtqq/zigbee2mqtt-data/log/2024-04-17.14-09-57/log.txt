@@ -1,0 +1,14 @@
+info  2024-04-17 14:09:57: Logging to console and directory: '/app/data/log/2024-04-17.14-09-57' filename: log.txt
+info  2024-04-17 14:09:57: Starting Zigbee2MQTT version 1.36.1 (commit #ffc2ff1)
+info  2024-04-17 14:09:57: Starting zigbee-herdsman (0.40.3)
+error 2024-04-17 14:10:05: Error while starting zigbee-herdsman
+error 2024-04-17 14:10:05: Failed to start zigbee
+error 2024-04-17 14:10:05: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start.html for possible solutions
+error 2024-04-17 14:10:05: Exiting...
+error 2024-04-17 14:10:05: Error: network commissioning failed - panId collision detected (expected=6754, actual=6755)
+    at ZnpAdapterManager.beginCommissioning (/app/node_modules/zigbee-herdsman/src/adapter/z-stack/adapter/manager.ts:370:19)
+    at ZnpAdapterManager.start (/app/node_modules/zigbee-herdsman/src/adapter/z-stack/adapter/manager.ts:77:17)
+    at Controller.start (/app/node_modules/zigbee-herdsman/src/controller/controller.ts:132:29)
+    at Zigbee.start (/app/lib/zigbee.ts:62:27)
+    at Controller.start (/app/lib/controller.ts:109:27)
+    at start (/app/index.js:107:5)
